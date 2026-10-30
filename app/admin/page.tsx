@@ -22,4 +22,3 @@ export default function AdminPage() {
     </div>
   );
 }
-q
