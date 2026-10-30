@@ -1,8 +1,16 @@
+"use client";
+
 export default function Button({ children, ...props }: any) {
   return (
     <button
       {...props}
-      className="bg-blue-600 text-white px-4 py-2 rounded"
+      className="
+        gx-btn
+        px-4 py-2
+        rounded-full
+        font-semibold
+        transition
+      "
     >
       {children}
     </button>
