@@ -5,6 +5,7 @@ import { usePricingEngine } from "../hooks/usePricingEngine";
 
 export default function PricingForm() {
   const { getQuote } = usePricingEngine();
+
   const [form, setForm] = useState({
     loanAmount: "",
     creditScore: "",
@@ -27,12 +28,14 @@ export default function PricingForm() {
         className="border p-2 w-full"
         onChange={handleChange}
       />
+
       <input
         name="creditScore"
         placeholder="Credit Score"
         className="border p-2 w-full"
         onChange={handleChange}
       />
+
       <input
         name="propertyType"
         placeholder="Property Type"
