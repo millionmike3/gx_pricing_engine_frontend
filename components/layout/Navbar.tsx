@@ -7,10 +7,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Admin", href: "/admin" },
-    { name: "Investor", href: "/investor" },
+    { name: "Home | ", href: "/" },
+    { name: "Pricing |   ", href: "/pricing" },
+    { name: "Admin |  ", href: "/admin" },
+    { name: "Investor |   ", href: "/investor" },
     { name: "Borrower", href: "/borrower" },
   ];
 
@@ -18,11 +18,8 @@ export default function Navbar() {
     <nav className="w-full bg-gx-bg-light border-b border-gx-border px-6 py-4 shadow-lg">
       <div className="flex items-center justify-between">
 
-        {/* Brand */}
-      
-
         {/* Navigation Buttons */}
-        <div className="flex items-center gap-4 whitespace-nowrap">
+        <div className="flex items-center gap-10 whitespace-nowrap">
 
           {navItems.map((item) => {
             const isActive = pathname === item.href;
