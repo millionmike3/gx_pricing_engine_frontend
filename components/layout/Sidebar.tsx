@@ -8,27 +8,11 @@ export default function Sidebar() {
         GX Pricing Engine
       </h1>
 
-      <nav className="flex flex-col gap-3 text-gx-text">
-        <Link href="/" className="hover:text-gx-accent-blue transition">
-          Home
-        </Link>
+      {/* Remove navigation here */}
+      <p className="text-gray-400 text-sm">
+        Unified Pricing & Underwriting OS
+      </p>
 
-        <Link href="/pricing" className="hover:text-gx-accent-blue transition">
-          Pricing
-        </Link>
-
-        <Link href="/admin" className="hover:text-gx-accent-blue transition">
-          Admin
-        </Link>
-
-        <Link href="/investor" className="hover:text-gx-accent-blue transition">
-          Investor
-        </Link>
-
-        <Link href="/borrower" className="hover:text-gx-accent-blue transition">
-          Borrower
-        </Link>
-      </nav>
     </aside>
   );
 }
